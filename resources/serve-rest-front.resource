@@ -27,7 +27,7 @@ Preencher dados de castro de um novo usuario     ${EMAIL}=   FakerLibrary.Email
     Check Checkbox       css=input[data-testid="checkbox"]
     Click                css=button[data-testid="cadastrar"]
 
-Confeir usuario cadastrado
+Conferir usuario cadastrado
     Wait For Elements State    css=h1          visible
     Get Text                   css=h1    ==    Bem Vindo ${name}
     Get Element States         css=button[data-testid="logout"]    validate    value & visible
